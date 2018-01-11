@@ -1,0 +1,38 @@
+page-sign-up {
+    .center {
+      text-align: center;
+    }
+
+    ion-icon.large {
+      font-size: 7em;
+    }
+
+    ion-icon.lighter {
+      opacity: 0.5;
+    }
+
+    ion-list>.item:first-child {
+      border-top: 0;
+    }
+
+    ion-list>.item:last-child,
+    ion-list>ion-item-sliding:last-child .item {
+      border-bottom: 0;
+    }
+
+    .note.danger {
+      padding-left: 16px;
+      color: #d14;
+    }
+
+    .padding {
+      padding: 10px;
+    }
+    ion-label{
+        color:rgb(130, 199, 226);
+    }
+
+
+
+
+}

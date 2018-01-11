@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Contact Form
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <p class="center">
+    <ion-icon class="large lighter" primary name="contact"></ion-icon>
+  </p>
+  <form #login="ngForm" novalidate (ngSubmit)="onSubmit(login)">
+    <ion-list>
+      <ion-item>
+        <ion-label floating>User Name</ion-label>
+        <ion-input type="text" name="username" required [(ngModel)]="email">
+        </ion-input>
+      </ion-item>
+      <div [hidden]="login.controls.username && (login.controls.username.valid ||
+(login.controls.username.pristine && !isSubmitted))" class="note danger">
+        The User Name is required
+      </div>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+
+        <ion-input type="password" required minlength=5 name="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <div *ngIf="(isSubmitted && f.controls.password &&
+login.controls.password.pristine) || ((login.controls.password) &&
+(login.controls.password.dirty && login.controls.password.errors))" class="note danger">
+        Please enter {{ 5 - (login.controls.password.errors.minlength ? login.controls.password.errors.minlength.actualLength : 0) }} more
+        characters
+      </div>
+    </ion-list>
+    <div class="center">
+      <button ion-button type="submit" round outline [disabled]="!login.form.valid"><ion-icon name="send"> </ion-icon> Login</button>
+    </div>
+
+  </form>
+  <div class="padding">
+    <ion-navbar color="light">
+      <h3 class="center">
+        <button ion-button (click)="signUp()">Sign-Up</button>
+
+      </h3>
+    </ion-navbar>
+
+  </div>
+
+
+</ion-content>

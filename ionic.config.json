@@ -1,0 +1,8 @@
+{
+  "name": "lte-analyses",
+  "app_id": "56bdceb7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

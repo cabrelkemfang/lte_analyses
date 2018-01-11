@@ -1,0 +1,58 @@
+<!--
+  Generated template for the UploardFilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-icon name="menu" menuToggle left></ion-icon>
+    <ion-title>
+      Uploarded Files
+    </ion-title>
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <button ion-button (click)="uploadFile()">Select File</button>
+  </ion-item>
+  <ion-item>
+    Filename: {{fileName}}
+  </ion-item>
+  <ion-item>
+    Status: {{uploadStatus}}
+  </ion-item>
+  <ion-item>
+    Response:
+    <div class="item">{{uploadMessage}}</div>
+  </ion-item>
+  
+    <ion-grid>
+        <ion-row >
+          <ion-col width-25>File name</ion-col>
+          <ion-col width-25>Description</ion-col>
+          <ion-col width-25>Edit</ion-col>
+          <ion-col width-25>Delete</ion-col>
+          <ion-col width-25>Plote</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+              <ion-col width-25>File name</ion-col>
+              <ion-col width-25>Description</ion-col>
+              <ion-col width-25><ion-icon name="create"></ion-icon></ion-col>
+              <ion-col width-25><ion-icon name="trash"></ion-icon></ion-col>
+              <ion-col width-25><ion-icon name="stats"></ion-icon></ion-col>
+          </ion-item>
+          <ion-item>
+              <ion-col width-40>File name</ion-col>
+              <ion-col width-40>Descriptio</ion-col>
+              <ion-col width-25><ion-icon name="create"></ion-icon></ion-col>
+              <ion-col width-25><ion-icon name="trash"></ion-icon></ion-col>
+              <ion-col width-25></ion-col><ion-icon name="stats"></ion-icon>
+          </ion-item>
+        </ion-row>
+      </ion-grid>
+
+</ion-content>

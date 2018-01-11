@@ -1,0 +1,52 @@
+{
+  "_from": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git",
+  "_id": "cordova-plugin-filepath@1.0.2",
+  "_inBundle": false,
+  "_location": "/cordova-plugin-filepath",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git",
+    "rawSpec": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git",
+    "saveSpec": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git",
+    "fetchSpec": "https://github.com/compuhelmac/cordova-plugin-filepath.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git#1cf8f6ab745ee2c0044034c4093834df14d083a3",
+  "_spec": "git+https://github.com/compuhelmac/cordova-plugin-filepath.git",
+  "_where": "/home/admin123/lte-analyses",
+  "author": {
+    "name": "Ramesh Nair",
+    "email": "ram@hiddentao.com"
+  },
+  "bugs": {
+    "url": "https://github.com/hiddentao/cordova-plugin-filepath/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-filepath",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Resolve native file paths from content URLs for Cordova platforms",
+  "homepage": "https://github.com/hiddentao/cordova-plugin-filepath#readme",
+  "keywords": [
+    "cordova",
+    "file",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "Apache 2.0",
+  "name": "cordova-plugin-filepath",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiddentao/cordova-plugin-filepath.git"
+  },
+  "version": "1.0.2"
+}
